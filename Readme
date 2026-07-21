@@ -1,0 +1,38 @@
+# AI Content Creator
+
+A simple web app that uses the Claude API to generate ready-to-post social media content — a caption, hashtags, and follow-up content ideas — from a one-line brief.
+
+## 🧠 What it does
+
+Enter a quick brief about what you're posting, choose a platform and tone, and the app calls Claude to generate:
+- A platform-appropriate **caption**
+- A set of relevant **hashtags**
+- **3 follow-up content ideas** based on the same brief
+
+Results render in a live post-preview card with a character counter and a one-click copy button.
+
+## 📁 Repo contents
+
+| File | Description |
+|---|---|
+| `AI_Content_Creator_Project.docx` | Full project write-up — description, AI tools used, prompts, final output, and screenshots |
+| `ai_content_creator.html` | The working tool — a single-file HTML/CSS/JS app |
+
+## 🚀 How to run it
+
+No build step or install needed:
+
+1. Download `ai_content_creator.html`
+2. Open it in any modern browser
+3. Enter a brief, pick a platform + tone, and click **Generate content**
+
+> Note: the app calls the Anthropic API (`api.anthropic.com/v1/messages`) directly from the browser. To run it outside Claude's artifact environment, you'll need to point it at your own backend/proxy with a valid API key — browsers block direct API calls with exposed keys for security reasons.
+
+## 🛠️ Built with
+
+- **Claude (Anthropic API)** — content generation
+- **HTML / CSS / JavaScript** — UI and logic (no frameworks, no dependencies)
+
+## 📸 Preview
+
+See
